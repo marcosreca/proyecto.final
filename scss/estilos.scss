@@ -1,10 +1,11 @@
+/*barra de navegacion*/
 .nav-bar{
     a{
         color: #ffffff;
         text-decoration: none;
     }
 }
-
+/*formulario de contactos*/
 .formulario{
     
     display: flex;
@@ -21,4 +22,11 @@
     background-color: turquoise;
     backface-visibility: hidden;
 }
-    
+
+/*fuentes y tipografia*/
+    h2{
+        font-family: 'Nunito Sans', sans-serif;
+    }
+    p{
+        font-family: 'Lora', serif;
+    }
