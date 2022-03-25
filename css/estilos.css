@@ -1,7 +1,25 @@
 /*barra de navegacion*/
+.nav-bar {
+  position: relative;
+  display: flex;
+  justify-content: space-evenly !important;
+  padding-top: 0.5rem;
+  padding-bottom: 0.5rem;
+  align-items: center;
+  margin-bottom: 0; }
+  .nav-bar li {
+    padding: 1rem;
+    text-decoration: none; }
+
+.nav-bar li {
+  list-style-type: none; }
+
 .nav-bar a {
-  color: #ffffff;
-  text-decoration: none; }
+  text-decoration: none;
+  color: #FFF; }
+
+.menu-ppal {
+  justify-content: space-evenly !important; }
 
 /*formulario de contactos*/
 .formulario {
@@ -23,3 +41,77 @@ h2 {
 
 p {
   font-family: 'Lora', serif; }
+
+/*index*/
+.section-index-1 {
+  display: flex;
+  justify-content: space-around;
+  align-items: center; }
+  .section-index-1 h2 {
+    display: flex;
+    justify-content: start; }
+  .section-index-1 p {
+    margin-top: 0;
+    margin-bottom: 1rem;
+    text-align: start; }
+  .section-index-1 div {
+    width: 30%;
+    margin-top: 0rem; }
+
+.img-sec {
+  padding: 2rem; }
+
+.section-index-2 {
+  background: #c1f7fd;
+  background: linear-gradient(180deg, #c1f7fd 0%, white 100%);
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  flex-direction: row-reverse; }
+  .section-index-2 h2 {
+    display: flex;
+    justify-content: start; }
+  .section-index-2 p {
+    margin-top: 0;
+    margin-bottom: 1rem;
+    text-align: start; }
+  .section-index-2 div {
+    width: 30%;
+    margin-top: 0rem; }
+
+.section-index-3 {
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center; }
+  .section-index-3 h2 {
+    display: flex;
+    justify-content: start; }
+  .section-index-3 p {
+    margin-top: 0;
+    margin-bottom: 1rem;
+    text-align: start; }
+  .section-index-3 div {
+    width: 30%;
+    margin-top: 2rem; }
+
+.section-index-4 {
+  background: #c1f7fd;
+  background: linear-gradient(180deg, #c1f7fd 0%, white 100%);
+  display: flex;
+  justify-content: space-around;
+  flex-direction: row-reverse;
+  align-items: center; }
+  .section-index-4 h2 {
+    display: flex;
+    justify-content: start; }
+  .section-index-4 p {
+    margin-top: 0;
+    margin-bottom: 1rem;
+    text-align: start; }
+  .section-index-4 div {
+    width: 30%;
+    margin-top: 2rem; }
+
+.swiffy-slider li {
+  /*background-color:black;
+        opacity: 0.6;*/ }

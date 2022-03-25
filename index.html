@@ -9,14 +9,34 @@
     <meta name="descripcion" content="equipo de entrenamiento para todo el cuerpo con yoga, clases personalizadas">
     <meta name="keywords" content="clases de yoga, entrenamiento, profesor de yoga, rutinas de yoga">
     <link rel="stylesheet" href="css/estilos.css">
+    <script src="https://cdn.jsdelivr.net/npm/swiffy-slider@1.5.1/dist/js/swiffy-slider.min.js" crossorigin="anonymous" defer></script>
+    <link href="https://cdn.jsdelivr.net/npm/swiffy-slider@1.5.1/dist/css/swiffy-slider.min.css" rel="stylesheet" crossorigin="anonymous">
     <!-- Bootstrap CSS -->
     <link href="css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
 
     <title>Equipo instruccion</title>
   </head>
   <body>
-      <!--nav-->      
-        <div class="collapse" id="navbarToggleExternalContent">
+      <!--nav-->
+      <nav class="navbar navbar-dark bg-dark menu-ppal">
+        <img src="imagenes/logo-yoga.png">
+        <h5 class="text-white h4">Equipo instrucción</h5>
+                      <span class="text-muted"></span>
+                      <ul class="nav-bar">
+                        <li><a href="#">Home</a></li>
+                        <li><a href="paginas/alimentacion.html">Alimentación</a></li>
+                        <li><a href="paginas/posturas.html">Posturas</a></li>
+                        <li><a href="paginas/rutinas.html">Rutinas</a></li>
+                        <li><a href="paginas/contacto.html">Contacto</a></li>
+                        </ul>
+                        <div class="social">
+                          <a href="#"><img src="img/facebook.png" alt=""></a>
+                          <a href="#"><img src="imagenes/icons8-mail-48.png" alt=""></a>
+                          <a href="#"><img src="imagenes/icons8-instagram-48.png" alt=""></a>
+                          <a href="#"><img src="imagenes/icons8-facebook-48.png" alt=""></a>
+                        </div>
+      </nav>
+      <!--  <div class="collapse" id="navbarToggleExternalContent">
                     <div class="bg-dark p-4">
                       <h5 class="text-white h4">Equipo instrucción</h5>
                       <span class="text-muted"></span>
@@ -37,31 +57,96 @@
                 
                     </div>
                   </nav>
-                  
-                  <div class="container-fluid bg-light">
-                    <div class="row">
-                      <div class="col-md-4">
-                        <h2>¿Quienes somos?</h2>
-                        <p>Somos un grupo de instructores que destinamos nuestro conocimiento al bienestar tanto fisico como mental, implementando diversos metodos de entremamiento y meditación.
-                            Destinamos nuestro conocimiento a quienes quieran un cambio en su vida, ya sea para estar mas sanos o bien para liberar estrés acumulado.
-                        </p>
-                      </div>
-                      <div class="col-md-4">
-                        <div class="list-group">
-                          <a href="/paginas/rutinas.html" class="list-group-item list-group-item-action">
-                           Variedad de ejercicios para tu bienestar.
-                          </a>
-                          <a href="/paginas/alimentacion.html" class="list-group-item list-group-item-action">Propuestas divertidas y faciles para una alimentación sana.</a>
-                          <a href="/paginas/alimentacion.html" class="list-group-item list-group-item-action">Un espacio ideal para la meditación</a>
-                          <a href="#" class="list-group-item list-group-item-action">Porta ac consectetur ac</a>
-                          <a href="#" class="list-group-item list-group-item-action">Vestibulum at eros</a>
+                -->        
+                <!--carrusel-->
+                <section class="portada">
+                  <div id="carouselExampleCaptions" class="carousel slide" data-bs-ride="carousel">
+                    <div class="carousel-indicators">
+                      <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+                      <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="1" aria-label="Slide 2"></button>
+                      <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="2" aria-label="Slide 3"></button>
+                    </div>
+                    <div class="carousel-inner">
+                      <div class="carousel-item active">
+                        <img src="imagenes/carrusel-1.jpg" class="d-block w-100" alt="slider1">
+                        <div class="carousel-caption d-none d-md-block">
+                          <h5>First slide label</h5>
+                          <p>Some representative placeholder content for the first slide.</p>
                         </div>
                       </div>
-                      <div class="col-md-4">
-                        One of three columns
+                      <div class="carousel-item">
+                        <img src="imagenes/carrusel-2.jpg" class="d-block w-100" alt="slider2">
+                        <div class="carousel-caption d-none d-md-block">
+                          <h5>Second slide label</h5>
+                          <p>Some representative placeholder content for the second slide.</p>
+                        </div>
+                      </div>
+                      <div class="carousel-item">
+                        <img src="imagenes/carrusel-3.jpg" class="d-block w-100" alt="slider3">
+                        <div class="carousel-caption d-none d-md-block">
+                          <h5>Third slide label</h5>
+                          <p>Some representative placeholder content for the third slide.</p>
+                        </div>
                       </div>
                     </div>
+                    <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="prev">
+                      <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                      <span class="visually-hidden">Previous</span>
+                    </button>
+                    <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="next">
+                      <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                      <span class="visually-hidden">Next</span>
+                    </button>
                   </div>
+            </section>  
+                        <section class="section-index-1">
+                          <div>
+                            <h2>¿Quienes somos?</h2>
+                            <p>Somos un grupo de instructores que destinamos nuestro conocimiento al bienestar tanto fisico como mental, implementando diversos metodos de entremamiento y meditación.
+                                Destinamos nuestro conocimiento a quienes quieran un cambio en su vida, ya sea para estar mas sanos o bien para liberar estrés acumulado.
+                            </p>
+                          </div>
+                          <div>
+                            <img class="img-sec" src="imagenes/yoga-section.jpg">
+                          </div>
+                        </section>
+
+                        <section class="section-index-2">
+                          <div>
+                            <h2>Dietas y recetas</h2>
+                            <p>Contamos con un amplio resetario de platos sanos y ricos, para complementar tu dieta en vase a nuestros ejercicios diarios.
+                            </p>
+                          </div>
+                          <div>
+                            <a href="paginas/alimentacion.html"><img class="img-sec" src="imagenes/yoga-section-2.jpg"></a>
+                          </div>
+                        </section>
+
+                        <section class="section-index-3">
+                          <div>
+                            <h2>Posturas y movimientos</h2>
+                            <p>Podes recorrer nuestro listado de posturas yoguicas para ejercitar musculos y articulaciones, callar la mente y flexivilizar el cuerpo.
+                              Cada una de estas "asanas" estan destinadas a ofrecer veneficios especificos para el cuerpo y la mente, liberando estrés acumulado. 
+                            </p>
+                          </div>
+                          <div>
+                            <img class="img-sec" src="imagenes/sec-3.jpg">
+                          </div>
+                        </section>
+
+                        <section class="section-index-4">
+                          <div>
+                            <h2>Programa de rutinas personalizadas</h2>
+                            <p>Explorá nuestro catalogo de rutinas y elegí la que más se acople tanto a tu cuerpo como a tu objetivo a futuro.
+                              Podes practicar diferentes rutinas teniendo en mente un objetivo, como por ejemplo el de liberar tensión y estrés, o bien un entrenamiento más muscular y aeróbico.
+                            </p>
+                          </div>
+                          <div>
+                            <img class="img-sec" src="imagenes/yoga-section.jpg">
+                          </div>
+                        </section>
+
+
     <!-- Option 1: Bootstrap Bundle with Popper -->
     <script src="js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
 
@@ -72,7 +157,7 @@
     -->
 
   <!--footer-->
-<div class="my-5">
+<div class="footer">
     <footer class="text-center text-white" style="background-color: #3f51b5">
       <!-- Grid container -->
       <div class="container">
