@@ -22,18 +22,67 @@
   justify-content: space-evenly !important; }
 
 /*formulario de contactos*/
+.form-1 {
+  display: flex;
+  justify-content: space-evenly;
+  background-image: url(/imagenes/fondo-contacto-2.jpg);
+  padding-top: 4rem;
+  padding-bottom: 4rem; }
+
 .formulario {
   display: flex;
   flex-direction: column;
-  align-items: center;
-  background-image: url(/imagenes/fondo-contacto-2.jpg); }
-
-.mb-3 {
-  margin-top: 1rem;
-  margin-bottom: 1rem !important;
   padding: 2rem;
-  background-color: turquoise;
-  backface-visibility: hidden; }
+  border-radius: 2rem;
+  background: rgba(255, 255, 255, 0.726);
+  width: 30%; }
+  .formulario input {
+    padding: 0.5rem; }
+  .formulario .fconsulta {
+    padding: 0.5rem;
+    min-height: 10rem; }
+
+.boton-form {
+  border: none;
+  border-radius: 2rem;
+  color: white;
+  background-color: #008CBA;
+  padding: 16px 32px;
+  text-align: center;
+  display: inline-block;
+  font-size: 16px;
+  margin-top: 1rem;
+  -webkit-transition-duration: 0.4s;
+  /* Safari */
+  transition-duration: 0.4s;
+  cursor: pointer;
+  text-decoration: none;
+  text-transform: uppercase; }
+
+.boton-form:hover {
+  background-color: #3f51b5; }
+
+.datos {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  background-color: rgba(255, 255, 255, 0.726);
+  border-radius: 2rem;
+  width: 30%; }
+  .datos img {
+    margin: 1rem; }
+  .datos li {
+    padding: 1rem;
+    list-style-type: none; }
+  .datos p {
+    margin: 1rem;
+    text-align: center; }
+  .datos a {
+    margin: 1rem;
+    text-decoration: none; }
+  .datos .redes {
+    display: flex;
+    justify-content: center; }
 
 /*fuentes y tipografia*/
 h2 {
@@ -112,6 +161,36 @@ p {
     width: 30%;
     margin-top: 2rem; }
 
-.swiffy-slider li {
-  /*background-color:black;
-        opacity: 0.6;*/ }
+/*alimentacion*/
+.tab {
+  overflow: hidden;
+  border: 1px solid #ccc;
+  background-color: #f1f1f1; }
+
+/* Style the buttons that are used to open the tab content */
+.tab button {
+  background-color: inherit;
+  float: left;
+  border: none;
+  outline: none;
+  cursor: pointer;
+  padding: 14px 16px;
+  transition: 0.3s; }
+
+/* Change background color of buttons on hover */
+.tab button:hover {
+  background-color: #ddd; }
+
+/* Create an active/current tablink class */
+.tab button.active {
+  background-color: #ccc; }
+
+/* Style the tab content */
+.tabcontent {
+  display: none;
+  padding: 6px 12px;
+  border: 1px solid #ccc;
+  border-top: none; }
+
+footer {
+  margin: 0 !important; }
