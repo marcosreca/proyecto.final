@@ -92,6 +92,15 @@ p {
   font-family: 'Lora', serif; }
 
 /*index*/
+.carousel-caption.d-none.d-md-block {
+  display: flex;
+  align-items: center;
+  justify-content: center; }
+  .carousel-caption.d-none.d-md-block h5 {
+    font-size: 48px; }
+  .carousel-caption.d-none.d-md-block p {
+    font-size: 25px; }
+
 .section-index-1 {
   display: flex;
   justify-content: space-around;
@@ -160,6 +169,38 @@ p {
   .section-index-4 div {
     width: 30%;
     margin-top: 2rem; }
+
+.banner-clases {
+  padding: 5rem 0;
+  background-image: url(../imagenes/clases-yoga-banner.jpg);
+  background-position: 50% 100%; }
+
+.p-banner {
+  color: #FFF;
+  text-align: center;
+  font-size: 25px; }
+
+.boton-transparente {
+  display: inline-block;
+  width: 200px;
+  padding: 8px;
+  color: #fff;
+  border: 2px solid #fff;
+  text-align: center;
+  outline: none;
+  text-decoration: none;
+  transition: background-color 0.2s ease-out, color 0.2s ease-out; }
+
+.boton-transparente:hover,
+.boton-transparente:active {
+  background-color: #fff;
+  color: #000;
+  transition: background-color 0.3s ease-in, color 0.3s ease-in; }
+
+.boton-banner-clases {
+  display: flex;
+  align-items: center;
+  justify-content: center; }
 
 /*alimentacion*/
 .section-alim p {
