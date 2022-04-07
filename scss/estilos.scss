@@ -67,7 +67,6 @@
     font-size: 16px;
     margin-top: 1rem;
     -webkit-transition-duration: 0.4s;
-    /* Safari */
     transition-duration: 0.4s;
     cursor: pointer;
     text-decoration: none;
@@ -128,6 +127,7 @@ p {
     display: flex;
     align-items: center;
     justify-content: center;
+    height: 50%;
 
     h5 {
         font-size: 48px;
@@ -137,6 +137,7 @@ p {
         font-size: 25px;
     }
 }
+
 
 .section-index-1 {
     display: flex;
@@ -455,3 +456,6 @@ footer {
     margin: 0 !important;
     background-color: #3f51b5;
 }
+
+/*****responsive*****/
+/*contacto*/

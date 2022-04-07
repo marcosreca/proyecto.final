@@ -53,7 +53,6 @@
   font-size: 16px;
   margin-top: 1rem;
   -webkit-transition-duration: 0.4s;
-  /* Safari */
   transition-duration: 0.4s;
   cursor: pointer;
   text-decoration: none;
@@ -95,7 +94,8 @@ p {
 .carousel-caption.d-none.d-md-block {
   display: flex;
   align-items: center;
-  justify-content: center; }
+  justify-content: center;
+  height: 50%; }
   .carousel-caption.d-none.d-md-block h5 {
     font-size: 48px; }
   .carousel-caption.d-none.d-md-block p {
@@ -347,3 +347,6 @@ div#preparacion5 {
 footer {
   margin: 0 !important;
   background-color: #3f51b5; }
+
+/*****responsive*****/
+/*contacto*/
