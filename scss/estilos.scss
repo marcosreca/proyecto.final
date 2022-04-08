@@ -458,4 +458,71 @@ footer {
 }
 
 /*****responsive*****/
+/*nav bar mobile*/
+@media screen and (min-width: 600px) {
+    .mobile {
+        display: none !important;
+    }
+
+    .bg-dark.p-4.mobile {
+        display: flex;
+        flex-direction: column;
+    }
+}
+
+@media screen and (max-width: 600px) {
+    .menu-ppal {
+        display: none !important;
+    }
+
+    .bg-dark.p-4.mobile {
+        display: flex;
+        flex-direction: column;
+    }
+
+    div#navbarToggleExternalContent ul {
+        display: flex;
+        flex-direction: column;
+        align-items: start;
+        padding-left: 0;
+    }
+}
+
+
 /*contacto*/
+@media screen and (max-width: 400px) {
+    .cont-contacto {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .form-1 {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        background-size: cover;
+        background-position: 35% 42%;
+    }
+
+    .formulario {
+        display: flex;
+        flex-direction: column;
+        padding: 1rem;
+        border-radius: 1rem;
+        background: rgba(255, 255, 255, 0.726);
+        width: 81%;
+        padding-bottom: 2rem;
+        margin-bottom: 2rem;
+    }
+
+    .datos {
+        width: 81%;
+    }
+
+    .datos li {
+        padding: 0rem;
+        list-style-type: none;
+        margin-left: -1rem;
+    }
+}
