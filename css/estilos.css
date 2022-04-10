@@ -35,7 +35,14 @@
   padding: 2rem;
   border-radius: 2rem;
   background: rgba(255, 255, 255, 0.726);
-  width: 30%; }
+  width: 30%;
+  animation: fadein 3s; }
+
+@keyframes fadein {
+  from {
+    opacity: 0; }
+  to {
+    opacity: 2; } }
   .formulario input {
     padding: 0.5rem; }
   .formulario .fconsulta {
@@ -67,7 +74,14 @@
   justify-content: space-around;
   background-color: rgba(255, 255, 255, 0.726);
   border-radius: 2rem;
-  width: 30%; }
+  width: 30%;
+  animation: fadein 3s; }
+
+@keyframes fadein {
+  from {
+    opacity: 0; }
+  to {
+    opacity: 2; } }
   .datos img {
     margin: 1rem; }
   .datos li {
@@ -84,10 +98,15 @@
     justify-content: center; }
 
 /*fuentes y tipografia*/
-h2 {
+h1,
+h2,
+h3,
+h4,
+h5 {
   font-family: 'Nunito Sans', sans-serif; }
 
-p {
+p,
+a {
   font-family: 'Lora', serif; }
 
 /*index*/
@@ -115,6 +134,16 @@ p {
   .section-index-1 div {
     width: 30%;
     margin-top: 0rem; }
+
+.img-sec:hover {
+  -webkit-transform: scale(1.2);
+  transform: scale(1.2); }
+
+.img-sec {
+  overflow: hidden; }
+
+.img-sec:hover {
+  filter: opacity(0.5); }
 
 .img-sec {
   padding: 2rem; }
@@ -328,7 +357,15 @@ div#preparacion5 {
   flex-direction: row-reverse; }
 
 .tarjeta {
-  width: 50%; }
+  width: 50%;
+  transition-delay: 2s;
+  animation: fadein 3s; }
+
+@keyframes fadein {
+  from {
+    opacity: 0; }
+  to {
+    opacity: 2; } }
 
 .contenido-posturas {
   background: #3f51b5;
@@ -390,10 +427,8 @@ footer {
   .img-sec {
     padding: 0rem;
     margin-bottom: 1rem;
-    width: 100%; } }
-
-/*alimentacion mobile*/
-@media screen and (max-width: 400px) {
+    width: 100%; }
+  /*alimentacion mobile*/
   .receta1,
   .receta2,
   .receta3,
@@ -406,16 +441,13 @@ footer {
     height: 100%; }
   .flex-imagen {
     display: flex;
-    flex-direction: column; } }
-
-/*rutina mobile*/
-iframe {
-  width: 17rem;
-  height: 100%;
-  margin-left: -5rem; }
-
-/*posturas mobile*/
-@media screen and (max-width: 400px) {
+    flex-direction: column; }
+  /*rutina mobile*/
+  iframe {
+    width: 17rem;
+    height: 100%;
+    margin-left: -5rem; }
+  /*posturas mobile*/
   .flex__imagen1,
   .flex__imagen2 {
     display: flex;
@@ -427,10 +459,8 @@ iframe {
     padding: 1rem; }
   .tarjeta__imagen {
     width: 15rem;
-    margin-left: -4rem; } }
-
-/*contacto mobile*/
-@media screen and (max-width: 400px) {
+    margin-left: -4rem; }
+  /*contacto mobile*/
   .cont-contacto {
     display: flex;
     flex-direction: column; }

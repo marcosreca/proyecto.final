@@ -36,7 +36,12 @@
     background-image: url(/imagenes/fondo-contacto-2.jpg);
     padding-top: 4rem;
     padding-bottom: 4rem;
+
 }
+
+
+
+
 
 .formulario {
     display: flex;
@@ -45,6 +50,17 @@
     border-radius: 2rem;
     background: rgba(255, 255, 255, 0.726);
     width: 30%;
+    animation: fadein 3s;
+
+    @keyframes fadein {
+        from {
+            opacity: 0;
+        }
+
+        to {
+            opacity: 2;
+        }
+    }
 
     input {
         padding: 0.5rem;
@@ -54,6 +70,7 @@
         padding: 0.5rem;
         min-height: 10rem;
     }
+
 }
 
 .boton-form {
@@ -86,6 +103,17 @@
     background-color: rgba(255, 255, 255, 0.726);
     border-radius: 2rem;
     width: 30%;
+    animation: fadein 3s;
+
+    @keyframes fadein {
+        from {
+            opacity: 0;
+        }
+
+        to {
+            opacity: 2;
+        }
+    }
 
     img {
         margin: 1rem;
@@ -113,11 +141,16 @@
 }
 
 /*fuentes y tipografia*/
-h2 {
+h1,
+h2,
+h3,
+h4,
+h5 {
     font-family: 'Nunito Sans', sans-serif;
 }
 
-p {
+p,
+a {
     font-family: 'Lora', serif;
 }
 
@@ -159,6 +192,19 @@ p {
         width: 30%;
         margin-top: 0rem;
     }
+}
+
+.img-sec:hover {
+    -webkit-transform: scale(1.2);
+    transform: scale(1.2);
+}
+
+.img-sec {
+    overflow: hidden;
+}
+
+.img-sec:hover {
+    filter: opacity(.5);
 }
 
 .img-sec {
@@ -434,6 +480,20 @@ div#preparacion5 {
 
 .tarjeta {
     width: 50%;
+    transition-delay: 2s;
+    animation: fadein 3s;
+
+
+
+    @keyframes fadein {
+        from {
+            opacity: 0;
+        }
+
+        to {
+            opacity: 2;
+        }
+    }
 }
 
 .contenido-posturas {
@@ -528,11 +588,7 @@ footer {
 
     }
 
-
-}
-
-/*alimentacion mobile*/
-@media screen and (max-width: 400px) {
+    /*alimentacion mobile*/
 
     .receta1,
     .receta2,
@@ -553,18 +609,18 @@ footer {
         display: flex;
         flex-direction: column;
     }
-}
 
-/*rutina mobile*/
-iframe {
 
-    width: 17rem;
-    height: 100%;
-    margin-left: -5rem;
-}
+    /*rutina mobile*/
 
-/*posturas mobile*/
-@media screen and (max-width: 400px) {
+    iframe {
+
+        width: 17rem;
+        height: 100%;
+        margin-left: -5rem;
+    }
+
+    /*posturas mobile*/
 
     .flex__imagen1,
     .flex__imagen2 {
@@ -585,12 +641,10 @@ iframe {
         margin-left: -4rem;
     }
 
-}
 
 
+    /*contacto mobile*/
 
-/*contacto mobile*/
-@media screen and (max-width: 400px) {
     .cont-contacto {
         display: flex;
         flex-direction: column;
@@ -625,4 +679,5 @@ iframe {
         list-style-type: none;
         margin-left: -1rem;
     }
+
 }
