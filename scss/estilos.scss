@@ -10,7 +10,14 @@
 
     li {
         padding: 1rem;
-        text-decoration: none;
+
+
+    }
+
+    li a:hover {
+        text-decoration: underline;
+        color: rgb(255, 255, 255);
+        text-decoration-color: rgb(255, 255, 255);
 
     }
 
@@ -23,19 +30,48 @@
 .nav-bar a {
     text-decoration: none;
     color: #FFF;
+    font-size: 1.5rem;
 }
 
 .menu-ppal {
     justify-content: space-evenly !important;
 }
 
+/*footer*/
+.text-white {
+    text-decoration: none;
+
+    a:hover {
+        text-decoration: underline;
+        color: rgb(255, 255, 255);
+        text-decoration-color: rgb(255, 255, 255);
+
+    }
+}
+
+
 /*formulario de contactos*/
 .form-1 {
     display: flex;
     justify-content: space-evenly;
     background-image: url(/imagenes/fondo-contacto-2.jpg);
+    background-image: fixed !important;
     padding-top: 4rem;
     padding-bottom: 4rem;
+    animation-duration: 3s;
+    animation-name: slidein;
+
+    @keyframes slidein {
+        from {
+            margin-left: 100%;
+            width: 300%;
+        }
+
+        to {
+
+            width: 100%;
+        }
+    }
 
 }
 
@@ -60,6 +96,7 @@
         to {
             opacity: 2;
         }
+
     }
 
     input {
@@ -122,11 +159,13 @@
     li {
         padding: 1rem;
         list-style-type: none;
+        font-size: 1.1rem;
     }
 
     p {
         margin: 1rem;
         text-align: center;
+        font-size: 1.5rem;
     }
 
     a {
@@ -180,12 +219,14 @@ a {
     h2 {
         display: flex;
         justify-content: start;
+        font-size: 3rem;
     }
 
     p {
         margin-top: 0;
         margin-bottom: 1rem;
         text-align: start;
+        font-size: 1.2rem;
     }
 
     div {
@@ -195,8 +236,9 @@ a {
 }
 
 .img-sec:hover {
-    -webkit-transform: scale(1.2);
     transform: scale(1.2);
+    transition: 300ms;
+
 }
 
 .img-sec {
@@ -222,12 +264,14 @@ a {
     h2 {
         display: flex;
         justify-content: start;
+        font-size: 3rem;
     }
 
     p {
         margin-top: 0;
         margin-bottom: 1rem;
         text-align: start;
+        font-size: 1.2rem;
     }
 
     div {
@@ -245,12 +289,14 @@ a {
     h2 {
         display: flex;
         justify-content: start;
+        font-size: 3rem;
     }
 
     p {
         margin-top: 0;
         margin-bottom: 1rem;
         text-align: start;
+        font-size: 1.2rem;
     }
 
     div {
@@ -270,12 +316,14 @@ a {
     h2 {
         display: flex;
         justify-content: start;
+        font-size: 3rem;
     }
 
     p {
         margin-top: 0;
         margin-bottom: 1rem;
         text-align: start;
+        font-size: 1.2rem;
     }
 
     div {
@@ -461,6 +509,20 @@ div#preparacion5 {
     color: #FFF;
     text-align: center;
     font-size: 48px;
+    animation-duration: 2s;
+    animation-name: slidein;
+
+    @keyframes slidein {
+        from {
+            margin-left: 100%;
+            width: 300%;
+        }
+
+        to {
+
+            width: 100%;
+        }
+    }
 }
 
 .flex__imagen1 {
@@ -496,6 +558,7 @@ div#preparacion5 {
     }
 }
 
+/*posturas*/
 .contenido-posturas {
     background: #3f51b5;
     padding: 3rem;
@@ -550,7 +613,7 @@ footer {
 }
 
 /*index mobile*/
-@media screen and (max-width: 400px) {
+@media screen and (max-width: 425px) {
 
     .section-index-1,
     .section-index-2,
